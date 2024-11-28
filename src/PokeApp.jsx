@@ -4,7 +4,9 @@ export const PokeApp = () => {
       <h1>Pokemon App</h1>
       <hr></hr>
       <ul>
-        <li></li>
+        <li>Poke</li>
+        <li>Poke</li>
+        <li>Poke</li>
       </ul>
     </>
   )
