@@ -1,15 +1,15 @@
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { increment } from './slices/counter';
 
 function App() {
   const { counter } = useSelector( state => state.counter)
+  const dispatch = useDispatch();
+
   return (
     <>
-      <div className="card">
-        <button onClick={ () => {}}>
+        <button onClick={ () => dispatch( increment() )}>
           count is { counter }
         </button>
-      </div>
-
     </>
   )
 }
